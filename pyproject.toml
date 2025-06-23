@@ -1,0 +1,17 @@
+[project]
+name = "novadraft"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.13",
+    "langchain>=0.3.26",
+    "langchain-cli[inmem]>=0.0.36",
+    "langchain-community>=0.3.26",
+    "langchain-core>=0.3.66",
+    "langchain-groq>=0.3.2",
+    "langgraph>=0.4.8",
+    "uvicorn>=0.34.3",
+    "watchdog>=6.0.0",
+]
