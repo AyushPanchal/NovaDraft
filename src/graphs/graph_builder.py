@@ -33,3 +33,12 @@ class GraphBuilder:
             self.build_topic_graph()
 
         return self.graph.compile()
+
+
+# Below code is for the langsmith langgraph studio
+
+llm = GroqLLM().get_llm()
+
+graph_builder = GraphBuilder(llm)
+
+graph = graph_builder.build_topic_graph().compile()
